@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root
+{
+    --color-body: #e3f0ff;
+    --color-base: #5654b3;
+    --color-input: #8997b9;
+    --color-white: #fff;
+    --color-contrast: #f1676d;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body
+{
+    background-color: var(--color-body);
+    min-height: 100vh;
+}
+
+.content
+{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav .icon-menu
+{
+    cursor: pointer;
+    display: none;
+}
+
+nav .logo a
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-base);
+    text-decoration: none;
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+nav ul li
+{
+    padding: 0 15px;
+}   
+
+nav ul li a
+{
+    font: 1.1rem;
+    color: var(--color-base);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul button
+{
+    background-color: var(--color-base);
+    color: var(--color-body);
+    font: 1rem;
+    letter-spacing: 1px ;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px ;
+}
+
+main
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-bx
+{
+    width: 40%;
+}
+
+.text-bx h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-base);
+    text-transform: uppercase;
+}
+
+.label-text-bx
+{
+    color: var(--color-contrast);
+}
+
+.text-bx p
+{
+    font-size: 1rem;
+    color: var(--color-base);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.input-bx
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.input-bx input
+{
+    display: block;
+    width: 60%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font: 1rem;
+    color: var(--color-input);
+    
+}
+
+.input-bx input::placeholder
+{
+    color: var(--color-base);
+    font-weight: 400;
+}
+
+.input-bx button
+{
+    background-color: var(--color-base);
+    color: var(--color-white);
+    font: 1rem;
+    padding: 0 10px;
+    cursor: pointer;
+    border: none; 
+}
+
+.social-media
+{
+    margin-top: 30px;
+}
+
+.social-media i
+{
+    font-size: 1.4rem;
+    color: var(--color-contrast);
+    margin: 0 3px;
+}
+
+.img-bx
+{
+    width: 60%;
+}
+
+.img-bx img
+{
+    width: 100%;
+}
+
+@media (max-width: 878px)
+{
+    nav ul button
+    {
+    background-color: var(--color-contrast);
+    }
+    
+    nav .icon-menu
+    {
+        display: block;
+    }
+
+    nav ul
+    {
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--color-base);
+    }
+
+    nav ul.active
+    {
+        transform: translateX(0);
+    }
+
+    nav ul li
+    {
+        padding: 10px;
+    }
+
+    nav ul li a
+    {
+        font-size: 1.1rem;
+        color: var(--color-white);
+    }
+
+    nav ul button
+    {
+       margin: 10px;
+       font-size: 1.1rem;
+    }
+
+    main
+    {
+        flex-direction: column;
+    }
+
+    .text-bx,
+    .img-bx
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-bx
+    {
+        margin-bottom: 40px;
+    }
+
+    .text-bx .input-bx
+    {
+        justify-content: center;
+    }
+}    
