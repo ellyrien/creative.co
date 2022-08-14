@@ -4,7 +4,7 @@
 
 Author: Elly Rien
 Start Date: Aug, 11 2022
-End Date: 
+End Date: Aug, 11 2022
 
 Object:
 The object of this small project is not to forget the basic knowledge acquired.
